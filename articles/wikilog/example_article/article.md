@@ -38,7 +38,7 @@ __cover__ is optional, you may remove that line. It is suggested to use pictures
 
 Link to [Ayaya](https://wiki.kirafan.moe/#/chara/14032000)
 
-![Picture in Wiki](static/assets/texture/charauiresource/mergedcharaicon/charaicon_10001000.jpeg)
+![Picture in Wiki](https://wiki.kirafan.moe/static/assets/texture/charauiresource/mergedcharaicon/charaicon_14032001.jpeg)
 
 Your local image filename may not begin with word __static/__, which will redirect to the files in wiki.
 
