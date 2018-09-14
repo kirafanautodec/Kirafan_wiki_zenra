@@ -11,7 +11,7 @@
 
 [WIP]
 
-It is suggested to learn markdown by this [example](https://markdown-it.github.io/)
+It is suggested to learn markdown by this [site](https://markdown-it.github.io/)
 
 ---
 
@@ -42,5 +42,5 @@ Link to [Ayaya](https://wiki.kirafan.moe/#/chara/14032000)
 
 Your local image filename may not begin with word __static/__, which will redirect to the files in wiki.
 
-![Clea](Clea.png)
+![Clea](Clea.jpg)
 
