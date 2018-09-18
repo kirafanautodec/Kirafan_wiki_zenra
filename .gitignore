@@ -22,6 +22,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+*.log
 
 tmp*
 deploy/.secret
