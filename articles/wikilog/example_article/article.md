@@ -1,13 +1,8 @@
-***
-### MetaBegin
-| key | value |
-| --- | ----- |
-| title | Example Article |
-| author | DreDiki |
-| lang | en |
-| cover | cover.png |
-### MetaEnd
-***
+<!--
+title: Example Article
+author: DreDiki
+lang: en
+-->
 
 [WIP]
 
