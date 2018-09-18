@@ -1,5 +1,5 @@
 <?php
-  $token = file_get_contents('.secret');
+  $token = trim(file_get_contents('.secret'));
   $body = file_get_contents('php://input');
   $post = json_decode($body, true);
   if (!isset($_SERVER['HTTP_X_HUB_SIGNATURE'])) {
