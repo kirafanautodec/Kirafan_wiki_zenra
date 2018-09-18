@@ -8,11 +8,13 @@ import json
 import glob
 import yaml
 import datetime
+import shutil
 
 cwd = os.path.dirname(os.path.abspath(__file__))
 srcdir = cwd + "/../articles/"
 distdir = cwd + "/../dist/"
-os.makedirs(distdir, exist_ok=True)
+shutil.rmtree(distdir, ignore_errors=True)
+shutil.copytree(srcdir, distdir)
 category_meta = yaml.load(open(srcdir + "categories.yaml"))
 srcfiles = glob.glob(srcdir + "**/**.md", recursive=True)
 metalines = slice(1, 4)
