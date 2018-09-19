@@ -15,7 +15,7 @@ srcdir = cwd + "/../articles/"
 distdir = cwd + "/../dist/"
 shutil.rmtree(distdir, ignore_errors=True)
 shutil.copytree(srcdir, distdir)
-category_meta = yaml.load(open(srcdir + "categories.yaml"))
+category_meta = yaml.load(open(srcdir + "categories.yaml", "r", encoding="utf-8"))
 srcfiles = glob.glob(srcdir + "**/**.md", recursive=True)
 metalines = slice(1, 4)
 
