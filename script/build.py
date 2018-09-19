@@ -32,7 +32,7 @@ for filepath in srcfiles:
         categories.append(category)
         artitles[category] = []
   
-    file = open(filepath)
+    file = open(filepath, "r", encoding="utf-8")
     mdcontent = file.read().split('\n')[metalines]
     metayml = "\n".join(mdcontent)
     meta = yaml.load(metayml)
