@@ -53,8 +53,4 @@ with open(distdir + "meta.json", "wb") as of:
         "artitles_list": artitles_list
     }, ensure_ascii=False, indent=2, default=str)
     of.write(string.encode('utf-8'))
-
-print(category_meta)
-print(artitles)
-    
   
