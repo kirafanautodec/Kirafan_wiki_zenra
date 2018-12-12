@@ -38,13 +38,13 @@ author: DreDiki
 lang: zh
 -->
 
-各项的意义是
-|  项 | 标题  |
-| ------------ | ------------ |
-|  title |  文章标题，注意，**不需要在正文中重复标题** |
-|  author |  文章作者 |
-| lang | 本文语言，目前wiki支持的语言有 jp(日本語) en(English) zh(汉语) ko(한국어)  需要将两位字母填在此处 |
+各项的意义是  
 
+项 | 标题
+--- | ---
+title |  文章标题，注意，**不需要在正文中重复标题**
+author |  文章作者
+lang | 本文语言，目前wiki支持的语言有 jp(日本語) en(English) zh(汉语) ko(한국어)  需要将两位字母填在此处
 
 ## 联系我们
 如果你对我们有什么建议，欢迎在twitter私信[@kirafan_autodec](https://twitter.com/kirafan_autodec "@kirafan_autodec")
