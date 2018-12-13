@@ -21,8 +21,8 @@ srcfiles = glob.glob(srcdir + "**/**.md", recursive=True)
 metalines = slice(1, 4)
 
 categories = []
-artitles = {}
-artitles_list = []
+#artitles = {}
+artitles_list = {}
 
 for filepath in srcfiles:
     filename = filepath[len(srcdir):]
@@ -30,24 +30,25 @@ for filepath in srcfiles:
     category = filename.split('/')[0]
     if not category in categories:
         categories.append(category)
-        artitles[category] = []
+    #    artitles[category] = []
   
     file = open(filepath, "r", encoding="utf-8")
     mdcontent = file.read().split('\n')[metalines]
     metayml = "\n".join(mdcontent)
     meta = yaml.load(metayml)
 
-    meta["id"] = hashlib.md5(filepath.encode('utf-8')).hexdigest()[:16]
+    md5id = hashlib.md5(filepath.encode('utf-8')).hexdigest()[:16]
+    #meta["id"] = md5id
     meta["filepath"] = filename
     meta["edittime"] = datetime.datetime.fromtimestamp(int(mtime))
 
-    artitles[category].append(meta)
-    artitles_list.append(meta)
+    #artitles[category].append(meta)
+    artitles_list[md5id] = meta
 
 with open(distdir + "meta.json", "wb") as of:
     string = json.dumps({
         "categories": category_meta,
-        "artitles" : artitles,
+        #"artitles" : artitles,
         "artitles_list": artitles_list
     }, ensure_ascii=False, indent=2, default=str)
     of.write(string.encode('utf-8'))
