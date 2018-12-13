@@ -8,6 +8,7 @@ import json
 import glob
 import yaml
 import datetime
+import hashlib
 import shutil
 
 cwd = os.path.dirname(os.path.abspath(__file__))
@@ -23,7 +24,6 @@ categories = []
 artitles = {}
 artitles_list = []
 
-count = 0
 for filepath in srcfiles:
     filename = filepath[len(srcdir):]
     mtime = os.stat(filepath).st_mtime
@@ -37,14 +37,12 @@ for filepath in srcfiles:
     metayml = "\n".join(mdcontent)
     meta = yaml.load(metayml)
 
-    meta["id"] = count
+    meta["id"] = hashlib.md5(filepath.encode('utf-8')).hexdigest()[:16]
     meta["filepath"] = filename
     meta["edittime"] = datetime.datetime.fromtimestamp(int(mtime))
 
     artitles[category].append(meta)
     artitles_list.append(meta)
-
-    count += 1
 
 with open(distdir + "meta.json", "wb") as of:
     string = json.dumps({
@@ -53,4 +51,4 @@ with open(distdir + "meta.json", "wb") as of:
         "artitles_list": artitles_list
     }, ensure_ascii=False, indent=2, default=str)
     of.write(string.encode('utf-8'))
-  
+
