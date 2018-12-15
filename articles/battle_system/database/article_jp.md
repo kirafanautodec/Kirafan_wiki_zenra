@@ -131,7 +131,7 @@ lang: jp
 
 ## キャラクター経験値 / CharacterExp
 
-UpgradeAmount：とはレベルに応じて、１つの強化アイテムを使用するに伴うコインの消費数
+UpgradeAmount：レベルに応じて、１つの強化アイテムを使用するに伴うコインの消費数
 
 | Lv | NextExp | TotalExp | Total% | UpgradeAmount |
 | ------- | ----------- | ------------ | ---------- | ----------------- |
