@@ -6,7 +6,7 @@ lang: jp
 
 ## きららランク / MasterExp
 
-| Rank | NextExp | TotalExp | Total% | Stamina | PartyCost |
+| Rank | NextExp | TotalExp | Total% | Stamina | Cost |
 | -------- | ----------- | ------------ | ---------- | ----------- | ------------- |
 | **1**    | 30          | 0            | 0.0%       | 10          | 50            |
 | **2**    | 60          | 30           | 0.0%       | 12          | 52            |
