@@ -1,3 +1,9 @@
+<!--
+title: 最強★５キャラランキング
+author: Circle Lin
+lang: jp
+-->
+
 キャラ | 武器 | 進化 | ランク
 :---: | :---: | :---: | :---:
 [<img alt="10002000" src="https://kirafan.bangbang93.com/static/assets/texture/charauiresource/mergedcharaicon/charaicon_10002001.jpeg" width="64px" />](https://wiki.kirafan.moe/#/chara/10002000) | [<img alt="1000200" src="https://kirafan.bangbang93.com/static/assets/texture/weaponicon/weaponicon_wpn_1000200.png" width="64px" />](https://wiki.kirafan.moe/#/weapon/1000200) | 4 | EX
