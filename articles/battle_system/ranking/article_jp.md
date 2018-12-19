@@ -1,6 +1,6 @@
 <!--
 title: 最強★５キャラランキング
-author: Circle Lin
+author: 泪子, 韩湘儿, Circle Lin
 lang: jp
 -->
 
