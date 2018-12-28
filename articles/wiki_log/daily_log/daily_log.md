@@ -1,8 +1,18 @@
 <!--
-title: Wiki更新日志2018.12.10
-author: DreDiki
+title: Wiki更新日志
+author: Wiki Devs
 lang: zh
 -->
+
+# 2018.12.27
+* [Changed] 微调文章页面列表显示
+
+# 2018.12.27
+* [Fixed] 技能卡片显示修复
+* [Fixed] 优化关卡详情页性能
+* [Changed] 首页最新活动改为最近三个活动(临时的,大概)
+* [Changed] item增加掉率表(item页重做加入todo)
+
 # 2018.12.13
 * [Changed] 修改Wiki文章功能的id编号为Hash函数
 
