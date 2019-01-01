@@ -4,6 +4,14 @@ author: Wiki Devs
 lang: zh
 -->
 
+# 2019.1.1
+* [Added] 新年快乐
+* [Added] 主页增加点击特效
+* [Added] 物品、武器增加搜索功能
+* [Changed] 微调物品列表显示
+* [Fixed] 代码结构优化
+
+
 # 2018.12.29
 * [Changed] 增加周末本的路由并更改名字为图片显示
 * [Fixed] 掉落数据中的主章节索引修正
