@@ -4,6 +4,18 @@ author: Wiki Devs
 lang: zh
 -->
 
+# 2019.1.8
+* [Added] 增加图标
+* [Added] 增加pwa支持(手机版chrome添加到桌面)
+
+# 2019.1.5
+* [Changed] 修改wiki路由方式(链接/#/articles/变为/articles)
+* [Fixed] 修改状态字体
+
+# 2019.1.3
+* [Added] 贡献列表
+* [Changed] 调整敌人页面显示
+
 # 2019.1.1
 * [Added] 新年快乐
 * [Added] 主页增加点击特效
