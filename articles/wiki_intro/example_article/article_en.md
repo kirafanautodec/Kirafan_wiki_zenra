@@ -45,6 +45,6 @@ Your local image filename may not begin with word __static/__, which will redire
 
 $[Credit]{}
 
-$[ArcCharaCard]{"id":"14032000"}
+$[ArcCharaCard]{":id":"14032000"}
 
-$[ArcWeaponCard]{"id":"21200"}
+$[ArcWeaponCard]{":id":"21200"}
