@@ -4,11 +4,27 @@ author: Wiki Devs
 lang: zh
 -->
 
+
+# 2019.1.16
+* 数据库改为异步加载， 并取消数据库meta的缓存， 并增加数据库加载中的提示
+* 使用idb-keyval储存语言选择和本地数据库
+
+# 2019.1.14
+* **将数据库解析操作放到后端， 事前解析， 减轻客户端负担**
+
+# 2019.1.13
+* 修正DEF Debuff的范围
+
+# 2019.1.11
+* [Changed]修改稀有度图标
+
 # 2019.1.8
+* [Added] 增加sitemap
 * [Added] 增加图标
 * [Added] 增加pwa支持(手机版chrome添加到桌面)
 
 # 2019.1.5
+* [Added] 添加meta信息优化SEO
 * [Changed] 修改wiki路由方式(链接/#/articles/变为/articles)
 * [Fixed] 修改状态字体
 
