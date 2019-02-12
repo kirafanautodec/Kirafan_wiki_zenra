@@ -75,7 +75,7 @@ lang: jp
             rankCurrent = rank(int(item['Score']))
 
             f.write('\n\n')
-            f.write(' | '.join([rankCurrent] + [' ' for _ in range(line - 1)]) + '\n')
+            f.write(' | '.join([rankCurrent] + [' - ' for _ in range(line - 1)]) + '\n')
             f.write(' | '.join([':---:' for _ in range(line)]) + '\n')
             lineCount = 0
 
