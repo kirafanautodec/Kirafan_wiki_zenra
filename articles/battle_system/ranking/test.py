@@ -65,7 +65,6 @@ lang: jp
     f.write(' | '.join([
         'キャラ',
         '武器',
-        '進化',
         'ランク'
     ]) + '\n')
 
@@ -80,14 +79,14 @@ lang: jp
                     charaIconAsset % (str(int(item['CharaID'])+1)))
             ),
 
-            '<a href="%s">%s</a>' % (
+            ('<a href="%s">%s</a>' % (
                 weaponWikiPage % charaToWeapon(item['CharaID']),
                 '<img alt="%s" src="%s" width="64px" />' % (
                     charaToWeapon(item['CharaID']),
                     weaponIconAsset % charaToWeapon(item['CharaID']))
-            ) if item['Evo'] != '' else '',
+            ) if item['Evo'] != '' else '') + \
 
-            '0' if item['Evo'] == '1' else item['Evo'],
+            ('0' if item['Evo'] == '1' else item['Evo']),
 
             rank(int(item['Score']))
         ]) + '\n')
