@@ -6,7 +6,7 @@ lang: jp
 
 キャラ | 武器 | 進化 | ランク
 :---: | :---: | :---: | :---:
-<a href="/chara/10002000"><img alt="10002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_10002001.jpeg" width="64px" /></a> | <a href="/weapon/1000200"><img alt="1000200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1000200.png" width="64px" /></a> | 4 | EX
+<a href="#/chara/10002000"><img alt="10002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_10002001.jpeg" width="64px" /></a> | <a href="#/weapon/1000200"><img alt="1000200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1000200.png" width="64px" /></a> | 4 | EX
 <a href="/chara/14002000"><img alt="14002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_14002001.jpeg" width="64px" /></a> | <a href="/weapon/1400200"><img alt="1400200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1400200.png" width="64px" /></a> | 4 | SSS
 <a href="/chara/15002000"><img alt="15002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_15002001.jpeg" width="64px" /></a> | <a href="/weapon/1500200"><img alt="1500200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1500200.png" width="64px" /></a> | 4 | SS+
 <a href="/chara/20002000"><img alt="20002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_20002001.jpeg" width="64px" /></a> | <a href="/weapon/2000200"><img alt="2000200" src="/static/assets/texture/weaponicon/weaponicon_wpn_2000200.png" width="64px" /></a> | 4 | SS+

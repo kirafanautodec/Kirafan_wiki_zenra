@@ -31,7 +31,7 @@ __cover__ is optional, you may remove that line. It is suggested to use pictures
 
 ## Links & Images
 
-Link to [Ayaya](https://wiki.kirafan.moe/#/chara/14032000)
+Link to [Ayaya](https://wiki.kirafan.moe/chara/14032000)
 
 ![Picture in Wiki](https://wiki.kirafan.moe/static/assets/texture/charauiresource/mergedcharaicon/charaicon_14032001.jpeg)
 
@@ -39,3 +39,12 @@ Your local image filename may not begin with word __static/__, which will redire
 
 ![Clea](Clea.jpg)
 
+//function test
+
+[<Credit />](/Credit)
+
+$[Credit]{}
+
+$[ArcCharaCard]{":id":"14032000"}
+
+$[ArcWeaponCard]{":id":"21200"}
