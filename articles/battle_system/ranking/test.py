@@ -14,26 +14,28 @@ def csvLoad(csvFileName):
     return ans
 
 
+ranks = {
+    'EX':  125,
+    'SSS': 120,
+    'SS+': 115,
+    'SS':  110,
+    'S+':  105,
+    'S':   100,
+    'A+':   95,
+    'A':    90,
+    'A-':   87,
+    'B+':   83,
+    'B':    80,
+    'B-':   77,
+    'C+':   73,
+    'C':    70,
+    'C-':   67,
+    'D+':   63,
+    'D':    60
+}
+
+
 def rank(score):
-    ranks = {
-        'EX':  125,
-        'SSS': 120,
-        'SS+': 115,
-        'SS':  110,
-        'S+':  105,
-        'S':   100,
-        'A+':   95,
-        'A':    90,
-        'A-':   87,
-        'B+':   83,
-        'B':    80,
-        'B-':   77,
-        'C+':   73,
-        'C':    70,
-        'C-':   67,
-        'D+':   63,
-        'D':    60
-    }
     for rank in ranks:
         if score >= ranks[rank]:
             return rank
@@ -53,6 +55,9 @@ charaWikiPage = "/chara/%s"
 weaponWikiPage = "/weapon/%s"
 
 ranking = csvLoad(csvFileName)
+line = 6
+lineCount = 0
+rankCurrent = None
 
 
 with open(mdFileName, 'w') as f:
@@ -62,31 +67,44 @@ author: 涙子, 韓湘兒
 lang: jp
 -->\n\n''')
 
-    f.write(' | '.join([
-        'キャラ',
-        '武器',
-        'ランク'
-    ]) + '\n')
-
-    f.write(' | '.join([':---:' for _ in range(4)]) + '\n')
-
     for item in ranking:
-        f.write(' | '.join([
+        if rankCurrent != rank(int(item['Score'])):
+            if lineCount != line:
+                f.write(' | ')
+
+            rankCurrent = rank(int(item['Score']))
+
+            f.write('\n\n')
+            f.write(' | '.join([rankCurrent] + [' ' for _ in range(line - 1)]) + '\n')
+            f.write(' | '.join([':---:' for _ in range(line)]) + '\n')
+            lineCount = 0
+
+        cellCount = 1 if item['Evo'] == '' else 2
+
+        if lineCount + cellCount > line:
+            f.write('\n')
+            lineCount = 0
+
+        if lineCount != 0:
+            f.write(' | ')
+
+        lineCount += cellCount
+
+        f.write(
             '<a href="%s">%s</a>' % (
                 charaWikiPage % item['CharaID'],
                 '<img alt="%s" src="%s" width="64px" />' % (
                     item['CharaID'],
-                    charaIconAsset % (str(int(item['CharaID'])+1)))
-            ),
+                    charaIconAsset % (str(int(item['CharaID'])+1)))))
 
-            ('<a href="%s">%s</a>' % (
+        if item['Evo'] == '': continue
+
+        f.write(' | ')
+
+        f.write(
+            '<a href="%s">%s</a> %s' % (
                 weaponWikiPage % charaToWeapon(item['CharaID']),
                 '<img alt="%s" src="%s" width="64px" />' % (
                     charaToWeapon(item['CharaID']),
-                    weaponIconAsset % charaToWeapon(item['CharaID']))
-            ) if item['Evo'] != '' else '') + \
-
-            ('0' if item['Evo'] == '1' else item['Evo']),
-
-            rank(int(item['Score']))
-        ]) + '\n')
+                    weaponIconAsset % charaToWeapon(item['CharaID'])),
+                item['Evo']))
