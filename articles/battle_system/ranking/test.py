@@ -69,7 +69,7 @@ lang: jp
 
     for item in ranking:
         if rankCurrent != rank(int(item['Score'])):
-            if lineCount != line:
+            if rankCurrent is not None and lineCount != line:
                 f.write(' | ')
 
             rankCurrent = rank(int(item['Score']))
