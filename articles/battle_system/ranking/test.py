@@ -107,4 +107,4 @@ lang: jp
                 '<img alt="%s" src="%s" width="64px" />' % (
                     charaToWeapon(item['CharaID']),
                     weaponIconAsset % charaToWeapon(item['CharaID'])),
-                item['Evo']))
+                item['Evo'] if item['Evo'] != '1' else ''))
