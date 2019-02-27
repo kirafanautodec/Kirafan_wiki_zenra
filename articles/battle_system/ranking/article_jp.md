@@ -8,7 +8,9 @@ lang: jp
 
 EX |  -  |  -  |  -  |  -  |  - 
 :---: | :---: | :---: | :---: | :---: | :---:
-<a href="/chara/10002000"><img alt="10002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_10002001.jpeg" width="64px" /></a> | <a href="/weapon/1000200"><img alt="1000200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1000200.png" width="64px" /></a> 4 | <a href="/chara/26002000"><img alt="26002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_26002001.jpeg" width="64px" /></a><small>眠り免疫の敵に対してはA-</small> | <a href="/weapon/2600200"><img alt="2600200" src="/static/assets/texture/weaponicon/weaponicon_wpn_2600200.png" width="64px" /></a> 4 | |
+<a href="/chara/10002000"><img alt="10002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_10002001.jpeg" width="64px" /></a> | <a href="/weapon/1000200"><img alt="1000200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1000200.png" width="64px" /></a> 4 | <a href="/chara/26002000"><img alt="26002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_26002001.jpeg" width="64px" /></a> | <a href="/weapon/2600200"><img alt="2600200" src="/static/assets/texture/weaponicon/weaponicon_wpn_2600200.png" width="64px" /></a> 4 | |
+
+<small>メリー（専用武器４）は眠り免疫の敵に対してランクが A-</small>
 
 SSS+ |  -  |  -  |  -  |  -  |  - 
 :---: | :---: | :---: | :---: | :---: | :---:
