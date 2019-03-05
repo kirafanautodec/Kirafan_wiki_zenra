@@ -83,12 +83,12 @@ buff最终效果由不同类buff各自叠加后再相乘，多个数字相乘达
 
 
  - ★★★★
-   - 五星透【圣诞】（单体中减双防，低硬直）
-   - 五星绫【情人节】（对物防专用）
-   - 五星千石冠（对魔防专用）
-   - 五星安奈+专武最终进化（加物攻大up 暴击率大up）
-   - 五星波尔卡（加一度物攻小 加必暴击）
-   - 五星萌田薰子+专武（双攻up，暴击率up，小硬直，附带解异常提高成功率，截至发帖还没出最终进化，可能有较大潜力）
+   - [五星透【圣诞】](https://wiki.kirafan.moe/chara/13002010)（单体中减双防，低硬直）
+   - [五星绫【情人节】](https://wiki.kirafan.moe/chara/14032000)（对物防专用）
+   - [五星千石冠](https://wiki.kirafan.moe/chara/21012000)（对魔防专用）
+   - [五星安奈](https://wiki.kirafan.moe/chara/18002000)+[专武最终进化](https://wiki.kirafan.moe/weapon/1800200)（加物攻大up 暴击率大up）
+   - [五星波尔卡](https://wiki.kirafan.moe/chara/32032000)（加一度物攻小 加必暴击）
+   - [五星萌田薰子](https://wiki.kirafan.moe/chara/24002000)+[专武](https://wiki.kirafan.moe/weapon/2400200)（双攻up，暴击率up，小硬直，附带解异常提高成功率，截至发帖还没出最终进化，可能有较大潜力）
 
 
  - ★★★
