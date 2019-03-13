@@ -15,30 +15,30 @@ def csvLoad(csvFileName):
 
 
 ranks = {
-    'EX':   125,
-    'SSS+': 122,
-    'SSS':  120,
-    'SS+':  115,
-    'SS':   110,
-    'S+':   105,
-    'S':    100,
-    'A+':    95,
-    'A':     90,
-    'A-':    87,
-    'B+':    83,
-    'B':     80,
-    'B-':    77,
-    'C+':    73,
-    'C':     70,
-    'C-':    67,
-    'D+':    63,
-    'D':     60
+    'EX':   {'score': 125, 'note': ''},
+    'SSS+': {'score': 122, 'note': ''},
+    'SSS':  {'score': 120, 'note': ''},
+    'SS+':  {'score': 115, 'note': ''},
+    'SS':   {'score': 110, 'note': ''},
+    'S+':   {'score': 105, 'note': ''},
+    'S':    {'score': 100, 'note': ''},
+    'A+':   {'score':  95, 'note': 'メリー（専用武器４）は<br />眠り免疫の敵に対してランクが A- で<br />眠り免疫でない敵に対しては EX です'},
+    'A':    {'score':  90, 'note': ''},
+    'A-':   {'score':  87, 'note': ''},
+    'B+':   {'score':  83, 'note': ''},
+    'B':    {'score':  80, 'note': ''},
+    'B-':   {'score':  77, 'note': ''},
+    'C+':   {'score':  73, 'note': ''},
+    'C':    {'score':  70, 'note': ''},
+    'C-':   {'score':  67, 'note': ''},
+    'D+':   {'score':  63, 'note': ''},
+    'D':    {'score':  60, 'note': ''}
 }
 
 
 def rank(score):
     for rank in ranks:
-        if score >= ranks[rank]:
+        if score >= ranks[rank]['score']:
             return rank
     return '?'
 
@@ -63,28 +63,23 @@ rankCurrent = None
 head = '''
 <!--
 title: 最強★５キャラランキング
-author: 涙子, 韓湘兒
+author: 佐天涙子, 韓湘兒
 lang: jp
 -->
 '''
 
-note = '''
-メリー（専用武器４）は<br />
-眠り免疫の敵に対してランクが A- で<br />
-眠り免疫でない敵に対しては EX です
-'''
-
 with open(mdFileName, 'w') as f:
-    f.write('%s\n<small>%s</small>\n' % (head, note))
+    f.write(head + '\n')
 
     for item in ranking:
         if rankCurrent != rank(int(item['Score'])):
-            if rankCurrent is not None and lineCount != line:
-                f.write(' | ')
+            if rankCurrent is not None:
+                if lineCount != line:
+                    f.write(' | ')
+                f.write('\n<small>' + ranks[rankCurrent]['note'] + '</small>\n')
 
             rankCurrent = rank(int(item['Score']))
 
-            f.write('\n\n')
             f.write(' | '.join([rankCurrent] + [' - ' for _ in range(line - 1)]) + '\n')
             f.write(' | '.join([':---:' for _ in range(line)]) + '\n')
             lineCount = 0
