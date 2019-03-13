@@ -60,13 +60,22 @@ line = 6
 lineCount = 0
 rankCurrent = None
 
-
-with open(mdFileName, 'w') as f:
-    f.write('''<!--
+head = '''
+<!--
 title: 最強★５キャラランキング
 author: 涙子, 韓湘兒
 lang: jp
--->\n\n''')
+-->
+'''
+
+note = '''
+メリー（専用武器４）は<br />
+眠り免疫の敵に対してランクが A- で<br />
+眠り免疫でない敵に対しては EX です
+'''
+
+with open(mdFileName, 'w') as f:
+    f.write('%s\n<small>%s</small>\n' % (head, note))
 
     for item in ranking:
         if rankCurrent != rank(int(item['Score'])):
