@@ -20,6 +20,7 @@ ranks = {
     'SSS':  {'score': 120, 'note': ''},
     'SS+':  {'score': 115, 'note': ''},
     'SS':   {'score': 110, 'note': ''},
+    'SS-':  {'score': 108, 'note': ''},
     'S+':   {'score': 105, 'note': ''},
     'S':    {'score': 100, 'note': ''},
     'A+':   {'score':  95, 'note': 'メリー（専用武器４）は<br />眠り免疫の敵に対してランクが A- で<br />眠り免疫でない敵に対しては EX です'},
@@ -60,7 +61,7 @@ line = 6
 lineCount = 0
 rankCurrent = None
 
-head = '''
+head = '''\
 <!--
 title: 最強★５キャラランキング
 author: 佐天涙子, 韓湘兒
