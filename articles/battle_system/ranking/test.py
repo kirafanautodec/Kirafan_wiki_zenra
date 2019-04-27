@@ -77,11 +77,13 @@ with open(mdFileName, 'w') as f:
             if rankCurrent is not None:
                 if lineCount != line:
                     f.write(' | ')
-                f.write('\n<small>' + ranks[rankCurrent]['note'] + '</small>\n')
+                f.write('\n<small>' +
+                        ranks[rankCurrent]['note'] + '</small>\n')
 
             rankCurrent = rank(int(item['Score']))
 
-            f.write(' | '.join([rankCurrent] + [' - ' for _ in range(line - 1)]) + '\n')
+            f.write(' | '.join([rankCurrent] +
+                               [' - ' for _ in range(line - 1)]) + '\n')
             f.write(' | '.join([':---:' for _ in range(line)]) + '\n')
             lineCount = 0
 
@@ -103,7 +105,8 @@ with open(mdFileName, 'w') as f:
                     item['CharaID'],
                     charaIconAsset % (str(int(item['CharaID'])+1)))))
 
-        if item['Evo'] == '': continue
+        if item['Evo'] == '':
+            continue
 
         f.write(' | ')
 
