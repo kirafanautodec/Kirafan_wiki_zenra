@@ -10,11 +10,11 @@ EX |  -  |  -  |  -  |  -  |  -
 <small></small>
 SSS+ |  -  |  -  |  -  |  -  |  - 
 :---: | :---: | :---: | :---: | :---: | :---:
-<a href="/chara/14002000"><img alt="14002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_14002001.jpeg" width="64px" /></a> | <a href="/weapon/1400200"><img alt="1400200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1400200.png" width="64px" /></a> 4 | <a href="/chara/10012000"><img alt="10012000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_10012001.jpeg" width="64px" /></a> | <a href="/weapon/1001200"><img alt="1001200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1001200.png" width="64px" /></a> 3 | 
+<a href="/chara/14002000"><img alt="14002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_14002001.jpeg" width="64px" /></a> | <a href="/weapon/1400200"><img alt="1400200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1400200.png" width="64px" /></a> 4 | 
 <small></small>
 SSS |  -  |  -  |  -  |  -  |  - 
 :---: | :---: | :---: | :---: | :---: | :---:
-<a href="/chara/20002000"><img alt="20002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_20002001.jpeg" width="64px" /></a> | <a href="/weapon/2000200"><img alt="2000200" src="/static/assets/texture/weaponicon/weaponicon_wpn_2000200.png" width="64px" /></a> 4 | <a href="/chara/24002000"><img alt="24002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_24002001.jpeg" width="64px" /></a> | <a href="/weapon/2400200"><img alt="2400200" src="/static/assets/texture/weaponicon/weaponicon_wpn_2400200.png" width="64px" /></a> 4 | 
+<a href="/chara/20002000"><img alt="20002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_20002001.jpeg" width="64px" /></a> | <a href="/weapon/2000200"><img alt="2000200" src="/static/assets/texture/weaponicon/weaponicon_wpn_2000200.png" width="64px" /></a> 4 | <a href="/chara/24002000"><img alt="24002000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_24002001.jpeg" width="64px" /></a> | <a href="/weapon/2400200"><img alt="2400200" src="/static/assets/texture/weaponicon/weaponicon_wpn_2400200.png" width="64px" /></a> 4 | <a href="/chara/10012000"><img alt="10012000" src="/static/assets/texture/charauiresource/mergedcharaicon/charaicon_10012001.jpeg" width="64px" /></a> | <a href="/weapon/1001200"><img alt="1001200" src="/static/assets/texture/weaponicon/weaponicon_wpn_1001200.png" width="64px" /></a> 3
 <small></small>
 SS+ |  -  |  -  |  -  |  -  |  - 
 :---: | :---: | :---: | :---: | :---: | :---:
